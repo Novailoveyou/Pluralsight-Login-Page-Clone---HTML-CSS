@@ -120,7 +120,8 @@ img{
       margin: 0 0 1.5em 0;
     }
   }
-  @media screen and (min-width: 1200px){
+  @media only screen and (min-width: 1200px),
+  @media only screen and (min-device-width: 1200px){
     &__login-screen{
       flex: 2;
     }
@@ -128,7 +129,8 @@ img{
       flex: 3;
     }
   }
-  @media screen and (max-width: 768px){
+  @media only screen and (max-width: 768px),
+  @media only screen and (max-device-width: 768px){
     overflow: auto;
     &__login-screen{
       justify-content: start;
